@@ -1,0 +1,104 @@
+/* Star rating  */
+.star-rating {
+    border-bottom: 0.7em solid #e4a853;
+    border-left: 0.3em solid transparent;
+    border-right: 0.3em solid transparent;
+    display: inline-block;
+    font-size: 8px;
+    height: 0;
+    margin-bottom: 2em;
+    margin-left: 0.9em;
+    margin-right: 0.9em;
+    position: relative;
+    /* Controlls the size of the stars. */
+    width: 0;
+}
+
+.star-rating:before, .star-rating:after {
+    border-bottom: 0.7em solid #e4a853;
+    border-left: 1em solid transparent;
+    border-right: 1em solid transparent;
+    content: "";
+    display: block;
+    height: 0;
+    left: -1em;
+    position: absolute;
+    top: 0.6em;
+    transform: rotate(-35deg);
+    width: 0;
+}
+
+.star-rating:after {
+    transform: rotate(35deg);
+}
+
+.section-subtitle {
+    color: #666;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 6px;
+    margin-bottom: 5px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.section-subtitle span {
+    color: #aa8453;
+}
+
+.section-title {
+    color: #222;
+    font-family: 'Gilda Display', serif;
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 1.25em;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.section-title span {
+    color: #fff;
+}
+
+/* reservation button */
+.reservations {
+    align-items: center;
+    display: flex;
+}
+
+.reservations .icon {
+    position: relative;
+    top: 3px;
+}
+
+.reservations .icon span {
+    color: #8e6d45;
+    font-size: 35px;
+}
+
+.reservations .icon.color-1 span {
+    color: #fff;
+    font-size: 40px;
+}
+
+.reservations .text {
+    margin-left: 20px;
+}
+
+.reservations .text p {
+    font-size: 15px;
+    margin: 0;
+
+}
+
+.reservations .text a {
+    color: #8e6d45;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+.reservations .text a.color-1 {
+    color: #fff;
+}
