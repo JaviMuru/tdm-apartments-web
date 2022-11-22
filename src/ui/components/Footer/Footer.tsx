@@ -62,13 +62,13 @@ export const Footer = () => {
                   <p className="footer-contact-mail">info@luxuryhotel.com</p>
                 </div>
                 <div className="footer-about-social-list">
-                  <a href="#">
+                  <a href="https://www.instagram.com/tdm_apartamentos/">
                     <i className="ti-instagram"></i>
                   </a>
-                  <a href="#">
+                  <a href="https://www.instagram.com/tdm_apartamentos/">
                     <i className="ti-youtube"></i>
                   </a>
-                  <a href="#">
+                  <a href="https://www.instagram.com/tdm_apartamentos/">
                     <i className="ti-facebook"></i>
                   </a>
                 </div>
@@ -83,7 +83,7 @@ export const Footer = () => {
             <div className="col-md-12">
               <div className="footer-bottom-inner">
                 <p className="footer-bottom-copy-right">
-                  © Copyright 2023 by <a href="#">Javi</a>
+                  © Copyright 2023 by <a href="https://github.com/JaviMuru">Javi</a>
                 </p>
               </div>
             </div>

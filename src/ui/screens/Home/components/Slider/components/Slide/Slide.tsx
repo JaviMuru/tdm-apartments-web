@@ -22,7 +22,7 @@ export const Slide = ({ title, description, image, linkText }: Props) => {
               <h4>{title}</h4>
               <h1>{description}</h1>
               <div className="butn-light mt-30 mb-30">
-                <a href="#" data-scroll-nav="1">
+                <a href="https://github.com/JaviMuru" data-scroll-nav="1">
                   <span>{linkText}</span>
                 </a>
               </div>
