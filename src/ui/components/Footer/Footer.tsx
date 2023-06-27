@@ -1,95 +1,131 @@
-import './Footer.styles.css'
+import React from 'react'
+import { Link } from 'react-router-dom'
+import BGImg from '../../assets/img/bg/footer-bg.png'
+import footerLogo from '../../assets/img/logo/logo1.png'
+import { Copyright } from './_components/Copyright'
 
 export const Footer = () => {
   return (
-    <footer className="footer">
-      <div className="footer-top">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-4">
-              <div className="footer-column footer-about">
-                <h3 className="footer-title">About Hotel</h3>
-                <p className="footer-about-text">
-                  Welcome to the best five-star deluxe hotel in New York. Hotel elementum sesue the aucan vestibulum
-                  aliquam justo in sapien rutrum volutpat.
-                </p>
-                <div className="footer-language">
-                  <i className="lni ti-world"></i>
-                  <select>
-                    <option value="#0">English</option>
-                    <option value="#0">German</option>
-                  </select>
+    <>
+      <footer className="footer-bg footer-p">
+        <div
+          className="footer-top  pt-90 pb-40"
+          style={{ backgroundColor: '#644222', backgroundImage: `url(${BGImg})` }}>
+          <div className="container">
+            <div className="row justify-content-between">
+              <div className="col-xl-4 col-lg-4 col-sm-6">
+                <div className="footer-widget mb-30">
+                  <div className="f-widget-title mb-30">
+                    <img src={footerLogo} alt="img" />
+                  </div>
+                  <div className="f-contact">
+                    <ul>
+                      {/*      <li>
+                        <i className="icon fal fa-phone"></i>
+                        <span>
+                          1800-121-3637
+                          <br />
+                          +91-7052-101-786
+                        </span>
+                      </li>*/}
+                      <li>
+                        <span>
+                          <i className="icon fal fa-envelope"></i>
+                          <Link to="#">tdmapartamentos@gmail.com</Link>
+                        </span>
+                      </li>
+                      {/*<li>
+                        <i className="icon fal fa-map-marker-check"></i>
+                        <span>
+                          1247/Plot No. 39, 15th Phase,
+                          <br /> LHB Colony, Kanpur
+                        </span>
+                      </li>*/}
+                    </ul>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="col-md-3 offset-md-1">
-              <div className="footer-column footer-explore clearfix">
-                <h3 className="footer-title">Explore</h3>
-                <ul className="footer-explore-list list-unstyled">
-                  <li>
-                    <a href="index.html">Home</a>
-                  </li>
-                  <li>
-                    <a href="rooms.html">Rooms & Suites</a>
-                  </li>
-                  <li>
-                    <a href="restaurant.html">Restaurant</a>
-                  </li>
-                  <li>
-                    <a href="spa-wellness.html">Spa & Wellness</a>
-                  </li>
-                  <li>
-                    <a href="about.html">About Hotel</a>
-                  </li>
-                  <li>
-                    <a href="contact.html">Contact</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="footer-column footer-contact">
-                <h3 className="footer-title">Contact</h3>
-                <p className="footer-contact-text">
-                  1616 Broadway NY, New York 10001
-                  <br />
-                  United States of America
-                </p>
-                <div className="footer-contact-info">
-                  <p className="footer-contact-phone">
-                    <span className="flaticon-call"></span> 855 100 4444
-                  </p>
-                  <p className="footer-contact-mail">info@luxuryhotel.com</p>
+              <div className="col-xl-2 col-lg-2 col-sm-6">
+                <div className="footer-widget mb-30">
+                  <div className="f-widget-title">
+                    <h2>Enlaces</h2>
+                  </div>
+                  <div className="footer-link">
+                    <ul>
+                      <li>
+                        <Link to="/">Inicio</Link>
+                      </li>
+                      <li>
+                        <Link to="/about"> Sobre nosotros</Link>
+                      </li>
+                      <li>
+                        <Link to="/apartments"> Apartamentos </Link>
+                      </li>
+                      <li>
+                        <Link to="/services"> Servicios </Link>
+                      </li>
+                      <li>
+                        <Link to="/contact"> Contacto</Link>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-                <div className="footer-about-social-list">
-                  <a href="https://www.instagram.com/tdm_apartamentos/">
-                    <i className="ti-instagram"></i>
-                  </a>
-                  <a href="https://www.instagram.com/tdm_apartamentos/">
-                    <i className="ti-youtube"></i>
-                  </a>
-                  <a href="https://www.instagram.com/tdm_apartamentos/">
-                    <i className="ti-facebook"></i>
-                  </a>
+              </div>
+              <div className="col-xl-2 col-lg-2 col-sm-6">
+                <div className="footer-widget mb-30">
+                  <div className="f-widget-title">
+                    <h2>Servicios</h2>
+                  </div>
+                  <div className="footer-link">
+                    <ul>
+                      <li>
+                        <Link to="/faq">FAQ</Link>
+                      </li>
+                      <li>
+                        <Link to="#">Soporte</Link>
+                      </li>
+                      <li>
+                        <Link to="#">Privacidad</Link>
+                      </li>
+                      <li>
+                        <Link to="#">Terminos y condiciones</Link>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div className="col-xl-4 col-lg-4 col-sm-6">
+                <div className="footer-widget mb-30">
+                  <div className="f-widget-title">
+                    <h2>Localización</h2>
+                  </div>
+                  {/*
+                  <div className="footer-link">
+                    <p>Subscribe our newsletter to get our latest update &amp; News</p>
+                    <div className="subricbe p-relative" data-animation="fadeInDown" data-delay=".4s">
+                      <form action="news-mail.php" method="post" className="contact-form ">
+                        <input
+                          type="text"
+                          id="email2"
+                          name="email2"
+                          className="header-input"
+                          placeholder="Your Email..."
+                          required
+                        />
+                        <button className="btn header-btn">
+                          <i className="fas fa-location-arrow"></i>
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+*/}
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div className="footer-bottom">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-12">
-              <div className="footer-bottom-inner">
-                <p className="footer-bottom-copy-right">
-                  © Copyright 2023 by <a href="https://github.com/JaviMuru">Javi</a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
+        <Copyright />
+      </footer>
+    </>
   )
 }

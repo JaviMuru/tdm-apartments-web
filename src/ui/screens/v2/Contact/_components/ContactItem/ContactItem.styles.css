@@ -1,0 +1,11 @@
+.container {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    line-height: 28px;
+    margin-bottom: 30px !important;
+    padding-bottom: 30px;
+}
