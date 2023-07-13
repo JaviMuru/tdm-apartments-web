@@ -1,5 +1,6 @@
 import FsLightbox from 'fslightbox-react'
 import React, { useState } from 'react'
+import { FloatingWhatsApp } from 'react-floating-whatsapp'
 import { Link } from 'react-router-dom'
 import Slider from 'react-slick'
 import Hotel from '../../../assets/img/bg/an-img-01.png'
@@ -41,41 +42,44 @@ export const Home = () => {
 
   return (
     <>
+      <FloatingWhatsApp accountName="TDM" phoneNumber="34689885990" />
       <main>
-        <section id="home" className="slider-area fix p-relative">
-          <div className="single-slider slider-bg d-flex align-items-center">
-            <video
-              src={videoBackground}
-              autoPlay
-              loop
-              muted
-              style={{
-                width: '100%',
-                height: '100%',
-                objectFit: 'cover'
-              }}>
-              <div className="container">
-                <div className="row justify-content-center align-items-center">
-                  <div className="col-lg-7 col-md-7">
-                    <div className="slider-content s-slider-content mt-80 text-center">
-                      <h2
-                        className={`${animation && 'animation' && 'fadeInUp'} `}
-                        data-animation="fadeInUp"
-                        data-delay=".4s"
-                        style={{ animationDelay: '0.4s' }}>
-                        Enjoy A Luxuary Experience
-                      </h2>
-                      <p data-animation="fadeInUp" data-delay=".6s">
-                        Donec vitae libero non enim placerat eleifend aliquam erat volutpat. Curabitur diam ex, dapibus
-                        purus sapien, cursus sed nisl tristique, commodo gravida lectus non.
-                      </p>
-                    </div>
+        <div className="single-slider slider-bg d-flex align-items-center">
+          <video
+            src={videoBackground}
+            autoPlay
+            loop
+            muted
+            style={{
+              position: 'absolute',
+              width: '100wh',
+              height: '100vh',
+              objectFit: 'cover',
+              zIndex: -11,
+              top: '-85px'
+            }}>
+            <div className="container">
+              <div className="row justify-content-center align-items-center">
+                <div className="col-lg-7 col-md-7">
+                  <div className="slider-content s-slider-content mt-80 text-center">
+                    <h2
+                      className={`${animation && 'animation' && 'fadeInUp'} `}
+                      data-animation="fadeInUp"
+                      data-delay=".4s"
+                      style={{ animationDelay: '0.4s' }}>
+                      Enjoy A Luxuary Experience
+                    </h2>
+                    <p data-animation="fadeInUp" data-delay=".6s">
+                      Donec vitae libero non enim placerat eleifend aliquam erat
+                      volutpat. Curabitur diam ex, dapibus purus sapien, cursus
+                      sed nisl tristique, commodo gravida lectus non.
+                    </p>
                   </div>
                 </div>
               </div>
-            </video>
-          </div>
-        </section>
+            </div>
+          </video>
+        </div>
         <section className="about-area about-p pt-120 pb-120 p-relative fix">
           <div className="animations-02">
             <img src={About} alt="contact-bg-an-02" />
@@ -115,7 +119,9 @@ export const Home = () => {
                       </div>
                       <div className="col-md-6">
                         <div className="slider-btn">
-                          <Link to="/apartments" className="btn ss-btn smoth-scroll">
+                          <Link
+                            to="/apartments"
+                            className="btn ss-btn smoth-scroll">
                             Ver apartamentos
                           </Link>
                         </div>
@@ -127,7 +133,10 @@ export const Home = () => {
             </div>
           </div>
         </section>
-        <section id="service-details2" className="pt-120 pb-90 p-relative" style={{ background: '#f7f5f1' }}>
+        <section
+          id="service-details2"
+          className="pt-120 pb-90 p-relative"
+          style={{ background: '#f7f5f1' }}>
           <div className="animations-01">
             <img src={Hotel} alt="an-img-01" />
           </div>
@@ -140,9 +149,24 @@ export const Home = () => {
                   <p>Descripción</p>
                 </div>
               </div>
-              <ServiceCard title="Actividades" description="Descripcion" image={Hotel1} url="/activities" />
-              <ServiceCard title="Playa y calas" description="Descripcion" image={Hotel2} url="/beach-details" />
-              <ServiceCard title="Qué ver" description="Descripcion" image={Hotel3} url="/what-to-see" />
+              <ServiceCard
+                title="Actividades"
+                description="Descripcion"
+                image={Hotel1}
+                url="/activities"
+              />
+              <ServiceCard
+                title="Playa y calas"
+                description="Descripcion"
+                image={Hotel2}
+                url="/beach-details"
+              />
+              <ServiceCard
+                title="Qué ver1"
+                description="Descripcion"
+                image={Hotel3}
+                url="/what-to-see"
+              />
             </div>
           </div>
         </section>
@@ -159,12 +183,17 @@ export const Home = () => {
             </div>
             <Slider className="row services-active" {...service}>
               {apartmentsData.map(apartment => (
-                <RoomSlide title={apartment.name} description={apartment.description} />
+                <RoomSlide
+                  title={apartment.name}
+                  description={apartment.description}
+                />
               ))}
             </Slider>
           </div>
         </section>
-        <section className="feature-area2 p-relative fix" style={{ background: '#f7f5f1' }}>
+        <section
+          className="feature-area2 p-relative fix"
+          style={{ background: '#f7f5f1' }}>
           <div className="animations-02">
             <img src={Resort} alt="contact-bg-an-05" />
           </div>
@@ -193,7 +222,9 @@ export const Home = () => {
             </div>
           </div>
         </section>
-        <section id="pricing" className="pricing-area pt-120 pb-60 fix p-relative">
+        <section
+          id="pricing"
+          className="pricing-area pt-120 pb-60 fix p-relative">
           <div className="animations-01">
             <img src={Hotel} alt="an-img-01" />
           </div>
@@ -277,7 +308,10 @@ export const Home = () => {
                     <h5>tdm apartments</h5>
                     <h2>Reserva tu apartamento</h2>
                   </div>
-                  <form action="mail.php" method="post" className="contact-form mt-30">
+                  <form
+                    action="mail.php"
+                    method="post"
+                    className="contact-form mt-30">
                     <div className="row">
                       <div className="col-lg-6 col-md-6">
                         <div className="contact-field p-relative c-name mb-20">
@@ -314,7 +348,8 @@ export const Home = () => {
                       <div className="col-lg-6 col-md-6">
                         <div className="contact-field p-relative c-option mb-20">
                           <label>
-                            <i className="fal fa-concierge-bell"></i> Apartamento
+                            <i className="fal fa-concierge-bell"></i>{' '}
+                            Apartamento
                           </label>
                           <select name="room" id="rm2">
                             <option value="sports-massage">Apartamento</option>
@@ -328,7 +363,10 @@ export const Home = () => {
                       </div>
                       <div className="col-lg-12">
                         <div className="slider-btn mt-15">
-                          <button className="btn ss-btn" data-animation="fadeInRight" data-delay=".8s">
+                          <button
+                            className="btn ss-btn"
+                            data-animation="fadeInRight"
+                            data-delay=".8s">
                             <span>Reserva</span>
                           </button>
                         </div>
@@ -364,7 +402,10 @@ export const Home = () => {
               <div className="col-12">
                 <div className="s-video-wrap">
                   <div className="s-video-content">
-                    <Link to="#" className="popup-video" onClick={() => setyShow(true)}>
+                    <Link
+                      to="#"
+                      className="popup-video"
+                      onClick={() => setyShow(true)}>
                       <img src={Play} alt="circle_right" />
                     </Link>
                   </div>
@@ -388,7 +429,11 @@ export const Home = () => {
             <div className="mfp-container mfp-s-ready mfp-iframe-holder">
               <div className="mfp-content">
                 <div className="mfp-iframe-scaler">
-                  <button title="Close (Esc)" type="button" className="mfp-close" onClick={() => setyShow(false)}>
+                  <button
+                    title="Close (Esc)"
+                    type="button"
+                    className="mfp-close"
+                    onClick={() => setyShow(false)}>
                     ×
                   </button>
                   <iframe
@@ -413,7 +458,11 @@ export const Home = () => {
             <div className="mfp-container mfp-s-ready mfp-iframe-holder">
               <div className="mfp-content">
                 <div className="mfp-iframe-scaler">
-                  <button title="Close (Esc)" type="button" className="mfp-close" onClick={() => sethShow(false)}>
+                  <button
+                    title="Close (Esc)"
+                    type="button"
+                    className="mfp-close"
+                    onClick={() => sethShow(false)}>
                     ×
                   </button>
                   <iframe

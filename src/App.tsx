@@ -11,7 +11,7 @@ import './ui/assets/css/responsive.css'
 import './ui/assets/css/slick.css'
 import './ui/assets/css/style.css'
 import './ui/assets/fontawesome/css/all.min.css'
-import { Navbar } from './ui/components/Navbar'
+import { NavbarV2 } from './ui/components/NavbarV2/NavbarV2'
 import { About } from './ui/screens/v2/About'
 import { Activies } from './ui/screens/v2/Activities/Activies'
 import { ApartmentDetails } from './ui/screens/v2/ApartmentDetails/ApartmentDetails'
@@ -27,7 +27,7 @@ import { WhatToSee } from './ui/screens/v2/WhatToSee/WhatToSee'
 export function App() {
   return (
     <Router basename="/">
-      <Navbar />
+      <NavbarV2 />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

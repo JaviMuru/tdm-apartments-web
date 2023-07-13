@@ -21,13 +21,27 @@ export const ApartmentCard = ({ apartment }: ApartmentCardProps) => {
           </Link>
         </div>
         <div className="services-content">
-          <div className="day-book" style={{ paddingLeft: 0 }}>
-            <ul>
-              <li>${apartment.price}/Noche</li>
-              <li>
-                <Link to="/contact">Reservar</Link>
-              </li>
-            </ul>
+          <div
+            style={{
+              background: '#644222',
+              color: '#fff',
+              fontSize: '20px',
+              fontWeight: 600,
+              width: '100%',
+              marginBottom: '30px',
+              marginTop: '-70px',
+              position: 'relative',
+              textAlign: 'center',
+              paddingTop: '15px',
+              paddingBottom: '15px'
+            }}>
+            <Link
+              to="/contact"
+              style={{
+                color: '#fff'
+              }}>
+              Reservar
+            </Link>
           </div>
           <h4>
             <Link to="/apartment-details">{apartment.name}</Link>
