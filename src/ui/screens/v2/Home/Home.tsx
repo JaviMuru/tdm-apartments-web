@@ -1,3 +1,4 @@
+import { Trans } from '@lingui/macro'
 import FsLightbox from 'fslightbox-react'
 import React, { useState } from 'react'
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
@@ -42,7 +43,13 @@ export const Home = () => {
 
   return (
     <>
-      <FloatingWhatsApp accountName="TDM" phoneNumber="34689885990" />
+      <FloatingWhatsApp
+        accountName="TDM"
+        phoneNumber="34689885990"
+        statusMessage=""
+        chatMessage="Hola! 🤝\n Cómo podemos ayudarte?"
+        placeholder="Escribe un mensaje..."
+      />
       <main>
         <div className="single-slider slider-bg d-flex align-items-center">
           <video
@@ -175,15 +182,22 @@ export const Home = () => {
             <div className="row justify-content-center">
               <div className="col-xl-12">
                 <div className="section-title center-align mb-50 text-center">
-                  <h5>El placer de conocer Tossa de Mar</h5>
-                  <h2>Apartamentos</h2>
-                  <p>Descripción</p>
+                  <h5>
+                    <Trans>El placer de conocer Tossa de Mar</Trans>
+                  </h5>
+                  <h2>
+                    <Trans>Apartamentos</Trans>
+                  </h2>
+                  <p>
+                    <Trans>Descripción</Trans>
+                  </p>
                 </div>
               </div>
             </div>
             <Slider className="row services-active" {...service}>
-              {apartmentsData.map(apartment => (
+              {apartmentsData.map((apartment, index) => (
                 <RoomSlide
+                  key={index}
                   title={apartment.name}
                   description={apartment.description}
                 />
@@ -336,7 +350,9 @@ export const Home = () => {
                             <i className="fal fa-users"></i> Adultos
                           </label>
                           <select name="adults" id="adu2">
-                            <option value="sports-massage">Adultos</option>
+                            <option value="sports-massage">
+                              <Trans>Adultos</Trans>
+                            </option>
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -349,10 +365,12 @@ export const Home = () => {
                         <div className="contact-field p-relative c-option mb-20">
                           <label>
                             <i className="fal fa-concierge-bell"></i>{' '}
-                            Apartamento
+                            <Trans>Apartamento</Trans>
                           </label>
                           <select name="room" id="rm2">
-                            <option value="sports-massage">Apartamento</option>
+                            <option value="sports-massage">
+                              <Trans>Apartamento</Trans>
+                            </option>
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -367,7 +385,9 @@ export const Home = () => {
                             className="btn ss-btn"
                             data-animation="fadeInRight"
                             data-delay=".8s">
-                            <span>Reserva</span>
+                            <span>
+                              <Trans>Reserva</Trans>
+                            </span>
                           </button>
                         </div>
                       </div>

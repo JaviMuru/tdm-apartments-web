@@ -1,6 +1,6 @@
 /** @type {import("@lingui/conf").LinguiConfig} */
 module.exports = {
-  locales: ['en', 'es'],
+  locales: ['en-EN', 'es-ES'],
   catalogs: [
     {
       path: 'src/locales/{locale}/messages',
@@ -8,5 +8,5 @@ module.exports = {
     }
   ],
   format: 'po',
-  sourceLocale: 'es'
+  sourceLocale: 'es-ES'
 }

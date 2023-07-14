@@ -18,7 +18,12 @@
 
 .btn--outline {
     background-color: rgb(100, 66, 34);
+    border: none;
+    border-radius: 2px;
     color: #fff;
+    cursor: pointer;
+    outline: none;
+    padding: 8px 20px;
     padding: 8px 20px;
     transition: all 0.3s ease-out;
 }

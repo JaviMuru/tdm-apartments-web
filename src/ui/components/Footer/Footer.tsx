@@ -1,3 +1,4 @@
+import { Trans } from '@lingui/macro'
 import React from 'react'
 import { Link } from 'react-router-dom'
 import BGImg from '../../assets/img/bg/footer-bg.png'
@@ -10,7 +11,10 @@ export const Footer = () => {
       <footer className="footer-bg footer-p">
         <div
           className="footer-top  pt-90 pb-40"
-          style={{ backgroundColor: '#644222', backgroundImage: `url(${BGImg})` }}>
+          style={{
+            backgroundColor: '#644222',
+            backgroundImage: `url(${BGImg})`
+          }}>
           <div className="container">
             <div className="row justify-content-between">
               <div className="col-xl-4 col-lg-4 col-sm-6">
@@ -53,19 +57,29 @@ export const Footer = () => {
                   <div className="footer-link">
                     <ul>
                       <li>
-                        <Link to="/">Inicio</Link>
+                        <Link to="/">
+                          <Trans>Inicio</Trans>
+                        </Link>
                       </li>
                       <li>
-                        <Link to="/about"> Sobre nosotros</Link>
+                        <Link to="/about">
+                          <Trans>Sobre nosotros</Trans>
+                        </Link>
                       </li>
                       <li>
-                        <Link to="/apartments"> Apartamentos </Link>
+                        <Link to="/apartments">
+                          <Trans>Apartamentos</Trans>
+                        </Link>
                       </li>
                       <li>
-                        <Link to="/services"> Servicios </Link>
+                        <Link to="/services">
+                          <Trans>Servicios </Trans>
+                        </Link>
                       </li>
                       <li>
-                        <Link to="/contact"> Contacto</Link>
+                        <Link to="/contact">
+                          <Trans>Contacto</Trans>
+                        </Link>
                       </li>
                     </ul>
                   </div>

@@ -32,7 +32,7 @@
 .nav-menu-tdm {
     display: grid;
     grid-gap: 5px;
-    grid-template-columns: repeat(6, auto);
+    grid-template-columns: repeat(7, auto);
     justify-content: end;
     list-style: none;
     margin-bottom: 0;
@@ -119,4 +119,48 @@
         color: rgb(100, 66, 34);
         transition: 250ms;
     }
+
+    .dropdown-content {
+        width: 100%;
+    }
+}
+
+.dropbtn {
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 16px;
+    height: 80px;
+    padding: 16px;
+}
+
+.dropdown {
+    align-items: center;
+    display: inline-block;
+}
+
+.dropdown-content {
+    background-color: rgba(0, 0, 0, 0.55);
+    color: #fff;
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    display: block;
+    padding: 12px 16px;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
 }

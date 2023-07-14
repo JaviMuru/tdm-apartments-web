@@ -25,7 +25,9 @@ export const WhatToSee = () => {
                       <h2 className="widget-title">Qué ver</h2>
                       <ul className="services-categories">
                         {whatToSeeData.map((beach, index) => (
-                          <li className={siteNumber === index ? 'active' : ''}>
+                          <li
+                            key={index}
+                            className={siteNumber === index ? 'active' : ''}>
                             <Link
                               onClick={() => {
                                 setSiteNumber(index)

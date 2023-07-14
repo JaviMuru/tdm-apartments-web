@@ -1,3 +1,4 @@
+import { Trans } from '@lingui/macro'
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { Footer } from '../../../components/Footer'
@@ -7,8 +8,10 @@ import { ContactItem } from './_components/ContactItem'
 
 export const Contact = () => (
   <main>
-    <Header title="Contacto" />
-    <section id="contact" className="contact-area after-none contact-bg pt-120 pb-120 p-relative fix">
+    <Header title={<Trans>Contacto</Trans>} />
+    <section
+      id="contact"
+      className="contact-area after-none contact-bg pt-20 pb-120 p-relative fix">
       <div className="container">
         <div className="row justify-content-center align-items-start">
           <div className="col-lg-4 order-1">
@@ -32,7 +35,7 @@ export const Contact = () => (
                 }
               />*/}
               <ContactItem
-                title="Correo electrónico"
+                title={<Trans>Correo electrónico</Trans>}
                 description={
                   <>
                     <Link to="#">tdmapartamentos@gmail.com</Link>

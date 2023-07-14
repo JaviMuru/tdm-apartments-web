@@ -1,0 +1,86 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2023-07-14 18:20+0200\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: en-EN\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
+
+#. js-lingui-explicit-id
+#: src/ui/screens/v2/Contact/_components/ContactForm/ContactForm.tsx:26
+#~ msgid "Nombre"
+#~ msgstr "Name"
+
+#: src/ui/components/Footer/Footer.tsx:71
+#: src/ui/components/Navbar/Navbar.tsx:66
+msgid "Apartamentos"
+msgstr "Apartments"
+
+#: src/ui/screens/v2/Contact/_components/ContactForm/ContactForm.tsx:59
+msgid "Asunto"
+msgstr "Topic"
+
+#: src/ui/screens/v2/Contact/_components/ContactForm/ContactForm.tsx:15
+msgid "Contáctanos"
+msgstr "Contact us"
+
+#: src/ui/components/Footer/Footer.tsx:81
+#: src/ui/components/Navbar/Navbar.tsx:81
+#: src/ui/screens/v2/Contact/Contact.tsx:11
+msgid "Contacto"
+msgstr "Contact"
+
+#: src/ui/screens/v2/Contact/_components/ContactForm/ContactForm.tsx:37
+#: src/ui/screens/v2/Contact/Contact.tsx:38
+msgid "Correo electrónico"
+msgstr "Email"
+
+#: src/ui/screens/v2/Contact/_components/ContactForm/ContactForm.tsx:79
+msgid "Enviar"
+msgstr "Send"
+
+#: src/ui/screens/v2/Contact/_components/ContactForm/ContactForm.tsx:70
+msgid "Escribe tu mensaje"
+msgstr "Write your message"
+
+#: src/ui/components/Navbar/Navbar.tsx:71
+msgid "Galeria"
+msgstr "Gallery"
+
+#: src/ui/components/Footer/Footer.tsx:61
+#: src/ui/components/Header/Header.tsx:36
+#: src/ui/components/Navbar/Navbar.tsx:56
+msgid "Inicio"
+msgstr "Home"
+
+#: src/ui/screens/v2/Contact/_components/ContactForm/ContactForm.tsx:26
+msgid "Nombre"
+msgstr "Name"
+
+#: src/ui/screens/v2/Contact/_components/ContactForm/ContactForm.tsx:48
+msgid "Número de teléfono"
+msgstr "Phone number"
+
+#: src/ui/components/Navbar/Navbar.tsx:101
+msgid "Reserva"
+msgstr "Book"
+
+#: src/ui/components/Footer/Footer.tsx:76
+#: src/ui/components/Navbar/Navbar.tsx:76
+msgid "Servicios"
+msgstr "Services"
+
+#: src/ui/components/Footer/Footer.tsx:66
+msgid "Sobre nosotros"
+msgstr "About us"
+
+#: src/ui/components/Navbar/Navbar.tsx:61
+msgid "Tossa de Mar"
+msgstr "Tossa de Mar"

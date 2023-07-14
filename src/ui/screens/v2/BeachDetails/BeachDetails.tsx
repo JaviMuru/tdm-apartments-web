@@ -25,7 +25,9 @@ export const BeachDetails = () => {
                       <h2 className="widget-title"> Playas y calas</h2>
                       <ul className="services-categories">
                         {beachDetailsData.map((beach, index) => (
-                          <li className={beachNumber === index ? 'active' : ''}>
+                          <li
+                            key={index}
+                            className={beachNumber === index ? 'active' : ''}>
                             <Link
                               onClick={() => {
                                 setBeachNumber(index)

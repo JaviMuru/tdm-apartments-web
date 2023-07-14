@@ -7,7 +7,7 @@ interface SocialButtonProps {
 }
 
 export const SocialButton = ({ icon, url }: SocialButtonProps) => (
-  <Link to={url}>
+  <Link to={url} target="_blank">
     <i className={`fab ${icon}`}></i>
   </Link>
 )

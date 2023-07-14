@@ -24,11 +24,11 @@ export const Apartments = () => {
     <>
       <main>
         <Header title="Apartamentos" />
-        <section id="services" className="services-area pt-120 pb-90">
+        <section id="services" className="services-area pb-90">
           <div className="container">
             <div className="row">
-              {apartmentsData.map(apartment => (
-                <ApartmentCard apartment={apartment} />
+              {apartmentsData.map((apartment, index) => (
+                <ApartmentCard key={index} apartment={apartment} />
               ))}
             </div>
           </div>

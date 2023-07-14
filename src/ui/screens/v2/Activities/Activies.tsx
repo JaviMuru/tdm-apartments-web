@@ -24,7 +24,11 @@ export const Activies = () => {
                       <h2 className="widget-title">Actividades</h2>
                       <ul className="services-categories">
                         {activitiesData.map((beach, index) => (
-                          <li className={activityNumber === index ? 'active' : ''}>
+                          <li
+                            key={index}
+                            className={
+                              activityNumber === index ? 'active' : ''
+                            }>
                             <Link
                               onClick={() => {
                                 setActivityNumber(index)
