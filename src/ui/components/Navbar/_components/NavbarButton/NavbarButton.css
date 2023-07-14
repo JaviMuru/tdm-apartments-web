@@ -18,9 +18,14 @@
 
 .btn--outline {
     background-color: rgb(100, 66, 34);
-    border: 1px solid var(--primary);
     color: #fff;
     padding: 8px 20px;
+    transition: all 0.3s ease-out;
+}
+
+.btn--outline:hover {
+    background-color: #fff;
+    color: rgb(100, 66, 34);
     transition: all 0.3s ease-out;
 }
 
