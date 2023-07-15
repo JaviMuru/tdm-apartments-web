@@ -28,10 +28,10 @@ import { service } from './data'
 export const Home = () => {
   const [yShow, setyShow] = useState<boolean>()
   const [hShow, sethShow] = useState<boolean>()
-  const [animation, setanimation] = useState()
+  const [animation] = useState()
 
-  const [toggler, setToggler] = useState<boolean>(false)
-  const [activeImage, setActiveImage] = useState(1)
+  const [toggler] = useState<boolean>(false)
+  const [activeImage] = useState(1)
   const images = [
     'assets/img/gallery/room-img01.png',
     'assets/img/gallery/room-img02.png',
@@ -77,9 +77,8 @@ export const Home = () => {
                       Enjoy A Luxuary Experience
                     </h2>
                     <p data-animation="fadeInUp" data-delay=".6s">
-                      Donec vitae libero non enim placerat eleifend aliquam erat
-                      volutpat. Curabitur diam ex, dapibus purus sapien, cursus
-                      sed nisl tristique, commodo gravida lectus non.
+                      Donec vitae libero non enim placerat eleifend aliquam erat volutpat. Curabitur diam ex, dapibus
+                      purus sapien, cursus sed nisl tristique, commodo gravida lectus non.
                     </p>
                   </div>
                 </div>
@@ -126,9 +125,7 @@ export const Home = () => {
                       </div>
                       <div className="col-md-6">
                         <div className="slider-btn">
-                          <Link
-                            to="/apartments"
-                            className="btn ss-btn smoth-scroll">
+                          <Link to="/apartments" className="btn ss-btn smoth-scroll">
                             Ver apartamentos
                           </Link>
                         </div>
@@ -140,10 +137,7 @@ export const Home = () => {
             </div>
           </div>
         </section>
-        <section
-          id="service-details2"
-          className="pt-120 pb-90 p-relative"
-          style={{ background: '#f7f5f1' }}>
+        <section id="service-details2" className="pt-120 pb-90 p-relative" style={{ background: '#f7f5f1' }}>
           <div className="animations-01">
             <img src={Hotel} alt="an-img-01" />
           </div>
@@ -156,24 +150,9 @@ export const Home = () => {
                   <p>Descripción</p>
                 </div>
               </div>
-              <ServiceCard
-                title="Actividades"
-                description="Descripcion"
-                image={Hotel1}
-                url="/activities"
-              />
-              <ServiceCard
-                title="Playa y calas"
-                description="Descripcion"
-                image={Hotel2}
-                url="/beach-details"
-              />
-              <ServiceCard
-                title="Qué ver1"
-                description="Descripcion"
-                image={Hotel3}
-                url="/what-to-see"
-              />
+              <ServiceCard title="Actividades" description="Descripcion" image={Hotel1} url="/activities" />
+              <ServiceCard title="Playa y calas" description="Descripcion" image={Hotel2} url="/beach-details" />
+              <ServiceCard title="Qué ver1" description="Descripcion" image={Hotel3} url="/what-to-see" />
             </div>
           </div>
         </section>
@@ -196,18 +175,12 @@ export const Home = () => {
             </div>
             <Slider className="row services-active" {...service}>
               {apartmentsData.map((apartment, index) => (
-                <RoomSlide
-                  key={index}
-                  title={apartment.name}
-                  description={apartment.description}
-                />
+                <RoomSlide key={index} title={apartment.name} description={apartment.description} />
               ))}
             </Slider>
           </div>
         </section>
-        <section
-          className="feature-area2 p-relative fix"
-          style={{ background: '#f7f5f1' }}>
+        <section className="feature-area2 p-relative fix" style={{ background: '#f7f5f1' }}>
           <div className="animations-02">
             <img src={Resort} alt="contact-bg-an-05" />
           </div>
@@ -236,9 +209,7 @@ export const Home = () => {
             </div>
           </div>
         </section>
-        <section
-          id="pricing"
-          className="pricing-area pt-120 pb-60 fix p-relative">
+        <section id="pricing" className="pricing-area pt-120 pb-60 fix p-relative">
           <div className="animations-01">
             <img src={Hotel} alt="an-img-01" />
           </div>
@@ -322,10 +293,7 @@ export const Home = () => {
                     <h5>tdm apartments</h5>
                     <h2>Reserva tu apartamento</h2>
                   </div>
-                  <form
-                    action="mail.php"
-                    method="post"
-                    className="contact-form mt-30">
+                  <form action="mail.php" method="post" className="contact-form mt-30">
                     <div className="row">
                       <div className="col-lg-6 col-md-6">
                         <div className="contact-field p-relative c-name mb-20">
@@ -364,8 +332,7 @@ export const Home = () => {
                       <div className="col-lg-6 col-md-6">
                         <div className="contact-field p-relative c-option mb-20">
                           <label>
-                            <i className="fal fa-concierge-bell"></i>{' '}
-                            <Trans>Apartamento</Trans>
+                            <i className="fal fa-concierge-bell"></i> <Trans>Apartamento</Trans>
                           </label>
                           <select name="room" id="rm2">
                             <option value="sports-massage">
@@ -381,10 +348,7 @@ export const Home = () => {
                       </div>
                       <div className="col-lg-12">
                         <div className="slider-btn mt-15">
-                          <button
-                            className="btn ss-btn"
-                            data-animation="fadeInRight"
-                            data-delay=".8s">
+                          <button className="btn ss-btn" data-animation="fadeInRight" data-delay=".8s">
                             <span>
                               <Trans>Reserva</Trans>
                             </span>
@@ -422,10 +386,7 @@ export const Home = () => {
               <div className="col-12">
                 <div className="s-video-wrap">
                   <div className="s-video-content">
-                    <Link
-                      to="#"
-                      className="popup-video"
-                      onClick={() => setyShow(true)}>
+                    <Link to="#" className="popup-video" onClick={() => setyShow(true)}>
                       <img src={Play} alt="circle_right" />
                     </Link>
                   </div>
@@ -449,11 +410,7 @@ export const Home = () => {
             <div className="mfp-container mfp-s-ready mfp-iframe-holder">
               <div className="mfp-content">
                 <div className="mfp-iframe-scaler">
-                  <button
-                    title="Close (Esc)"
-                    type="button"
-                    className="mfp-close"
-                    onClick={() => setyShow(false)}>
+                  <button title="Close (Esc)" type="button" className="mfp-close" onClick={() => setyShow(false)}>
                     ×
                   </button>
                   <iframe
@@ -478,11 +435,7 @@ export const Home = () => {
             <div className="mfp-container mfp-s-ready mfp-iframe-holder">
               <div className="mfp-content">
                 <div className="mfp-iframe-scaler">
-                  <button
-                    title="Close (Esc)"
-                    type="button"
-                    className="mfp-close"
-                    onClick={() => sethShow(false)}>
+                  <button title="Close (Esc)" type="button" className="mfp-close" onClick={() => sethShow(false)}>
                     ×
                   </button>
                   <iframe

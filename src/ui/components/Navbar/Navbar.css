@@ -37,6 +37,7 @@
     list-style: none;
     margin-bottom: 0;
     margin-right: 2rem;
+    min-width: 40vw;
     text-align: center;
     width: 60vw;
 }

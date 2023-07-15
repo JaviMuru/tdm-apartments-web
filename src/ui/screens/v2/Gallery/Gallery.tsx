@@ -1,3 +1,4 @@
+import { Trans } from '@lingui/macro'
 import FsLightbox from 'fslightbox-react'
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
@@ -16,7 +17,7 @@ import { Header } from '../../../components/Header'
 export const Gallery = () => {
   const [activeImage, setActiveImage] = useState(1)
 
-  const [images, setImages] = useState([
+  const [images] = useState([
     '../../../assets/img/gallery/protfolio-img02.png',
     '../../../assets/img/gallery/protfolio-img03.png',
     '../../../assets/img/gallery/protfolio-img01.png',
@@ -29,16 +30,16 @@ export const Gallery = () => {
     '../../../assets/img/gallery/protfolio-img10.png'
   ])
 
-  const [img, setImg] = useState<boolean>(false)
-  const [img1, setImg1] = useState<boolean>(false)
-  const [img2, setImg2] = useState<boolean>(false)
-  const [img3, setImg3] = useState<boolean>(false)
-  const [img4, setImg4] = useState<boolean>(false)
-  const [img5, setImg5] = useState<boolean>(false)
-  const [img6, setImg6] = useState<boolean>(false)
-  const [img7, setImg7] = useState<boolean>(false)
-  const [img8, setImg8] = useState<boolean>(false)
-  const [img9, setImg9] = useState<boolean>(false)
+  const [_img, setImg] = useState<boolean>(false)
+  const [_img1, setImg1] = useState<boolean>(false)
+  const [_img2, setImg2] = useState<boolean>(false)
+  const [_img3, setImg3] = useState<boolean>(false)
+  const [_img4, setImg4] = useState<boolean>(false)
+  const [_img5, setImg5] = useState<boolean>(false)
+  const [_img6, setImg6] = useState<boolean>(false)
+  const [_img7, setImg7] = useState<boolean>(false)
+  const [_img8, setImg8] = useState<boolean>(false)
+  const [_img9, setImg9] = useState<boolean>(false)
 
   const [toggler, setToggler] = useState(false)
 
@@ -71,7 +72,7 @@ export const Gallery = () => {
   return (
     <>
       <main>
-        <Header title="Galería" />
+        <Header title={<Trans>Galería</Trans>}></Header>
         <section className="profile fix pt-120">
           <div className="container-fluid">
             <div className="row">
@@ -173,9 +174,7 @@ export const Gallery = () => {
               </div>
               <div className="col-lg-12">
                 <div className="masonry-gallery-huge">
-                  <div
-                    className={`grid col2 ${galleryHeight()}`}
-                    style={{ position: 'relative' }}>
+                  <div className={`grid col2 ${galleryHeight()}`} style={{ position: 'relative' }}>
                     {tabMenu.banking && (
                       <div
                         className="grid-item banking"
@@ -184,21 +183,14 @@ export const Gallery = () => {
                           left: '0%',
                           top: '0px'
                         }}>
-                        <Link
-                          to="#"
-                          onClick={() => setImg(true)}
-                          className="popup-image">
+                        <Link to="#" onClick={() => setImg(true)} className="popup-image">
                           <figure
                             className="gallery-image"
                             onClick={() => {
                               setToggler(!toggler)
                               setActiveImage(1)
                             }}>
-                            <img
-                              src={portfolioImage2}
-                              alt="img"
-                              className="img"
-                            />
+                            <img src={portfolioImage2} alt="img" className="img" />
                           </figure>
                         </Link>
                       </div>
@@ -211,21 +203,14 @@ export const Gallery = () => {
                           left: '0%',
                           top: '0px'
                         }}>
-                        <Link
-                          to="#"
-                          onClick={() => setImg1(true)}
-                          className="popup-image">
+                        <Link to="#" onClick={() => setImg1(true)} className="popup-image">
                           <figure
                             className="gallery-image"
                             onClick={() => {
                               setActiveImage(2)
                               setToggler(!toggler)
                             }}>
-                            <img
-                              src={portfolioImage3}
-                              alt="img"
-                              className="img"
-                            />
+                            <img src={portfolioImage3} alt="img" className="img" />
                           </figure>
                         </Link>
                       </div>
@@ -238,10 +223,7 @@ export const Gallery = () => {
                           left: '0%',
                           top: '0px'
                         }}>
-                        <Link
-                          to="#"
-                          onClick={() => setImg2(true)}
-                          className="popup-image">
+                        <Link to="#" onClick={() => setImg2(true)} className="popup-image">
                           <figure
                             className="gallery-image"
                             onClick={() => {
@@ -254,47 +236,29 @@ export const Gallery = () => {
                       </div>
                     )}
                     {tabMenu.family && (
-                      <div
-                        className="grid-item family"
-                        style={{ position: 'absolute', left: '0%', top: '0' }}>
-                        <Link
-                          to="#"
-                          onClick={() => setImg3(true)}
-                          className="popup-image">
+                      <div className="grid-item family" style={{ position: 'absolute', left: '0%', top: '0' }}>
+                        <Link to="#" onClick={() => setImg3(true)} className="popup-image">
                           <figure
                             className="gallery-image"
                             onClick={() => {
                               setActiveImage(4)
                               setToggler(!toggler)
                             }}>
-                            <img
-                              src={portfolioImage4}
-                              alt="img"
-                              className="img"
-                            />
+                            <img src={portfolioImage4} alt="img" className="img" />
                           </figure>
                         </Link>
                       </div>
                     )}
                     {tabMenu.business && (
-                      <div
-                        className="grid-item business"
-                        style={{ position: 'absolute', left: '0%', top: '0' }}>
-                        <Link
-                          to="#"
-                          onClick={() => setImg4(true)}
-                          className="popup-image">
+                      <div className="grid-item business" style={{ position: 'absolute', left: '0%', top: '0' }}>
+                        <Link to="#" onClick={() => setImg4(true)} className="popup-image">
                           <figure
                             className="gallery-image"
                             onClick={() => {
                               setActiveImage(5)
                               setToggler(!toggler)
                             }}>
-                            <img
-                              src={portfolioImage5}
-                              alt="img"
-                              className="img"
-                            />
+                            <img src={portfolioImage5} alt="img" className="img" />
                           </figure>
                         </Link>
                       </div>
@@ -307,21 +271,14 @@ export const Gallery = () => {
                           left: '49.922%',
                           top: '0px'
                         }}>
-                        <Link
-                          to="#"
-                          onClick={() => setImg5(true)}
-                          className="popup-image">
+                        <Link to="#" onClick={() => setImg5(true)} className="popup-image">
                           <figure
                             className="gallery-image"
                             onClick={() => {
                               setActiveImage(6)
                               setToggler(!toggler)
                             }}>
-                            <img
-                              src={portfolioImage6}
-                              alt="img"
-                              className="img"
-                            />
+                            <img src={portfolioImage6} alt="img" className="img" />
                           </figure>
                         </Link>
                       </div>
@@ -334,21 +291,14 @@ export const Gallery = () => {
                           left: '24.961%',
                           top: '0'
                         }}>
-                        <Link
-                          to="#"
-                          onClick={() => setImg6(true)}
-                          className="popup-image">
+                        <Link to="#" onClick={() => setImg6(true)} className="popup-image">
                           <figure
                             className="gallery-image"
                             onClick={() => {
                               setActiveImage(7)
                               setToggler(!toggler)
                             }}>
-                            <img
-                              src={portfolioImage7}
-                              alt="img"
-                              className="img"
-                            />
+                            <img src={portfolioImage7} alt="img" className="img" />
                           </figure>
                         </Link>
                       </div>
@@ -361,21 +311,14 @@ export const Gallery = () => {
                           left: '24.961%',
                           top: '0'
                         }}>
-                        <Link
-                          to="#"
-                          onClick={() => setImg7(true)}
-                          className="popup-image">
+                        <Link to="#" onClick={() => setImg7(true)} className="popup-image">
                           <figure
                             className="gallery-image"
                             onClick={() => {
                               setActiveImage(8)
                               setToggler(!toggler)
                             }}>
-                            <img
-                              src={portfolioImage8}
-                              alt="img"
-                              className="img"
-                            />
+                            <img src={portfolioImage8} alt="img" className="img" />
                           </figure>
                         </Link>
                       </div>
@@ -388,21 +331,14 @@ export const Gallery = () => {
                           left: '24.961%',
                           top: '0'
                         }}>
-                        <Link
-                          to="#"
-                          onClick={() => setImg8(true)}
-                          className="popup-image">
+                        <Link to="#" onClick={() => setImg8(true)} className="popup-image">
                           <figure
                             className="gallery-image"
                             onClick={() => {
                               setActiveImage(9)
                               setToggler(!toggler)
                             }}>
-                            <img
-                              src={portfolioImage9}
-                              alt="img"
-                              className="img"
-                            />
+                            <img src={portfolioImage9} alt="img" className="img" />
                           </figure>
                         </Link>
                       </div>
@@ -415,21 +351,14 @@ export const Gallery = () => {
                           left: '24.961%',
                           top: '0'
                         }}>
-                        <Link
-                          to="#"
-                          onClick={() => setImg9(true)}
-                          className="popup-image">
+                        <Link to="#" onClick={() => setImg9(true)} className="popup-image">
                           <figure
                             className="gallery-image"
                             onClick={() => {
                               setActiveImage(10)
                               setToggler(!toggler)
                             }}>
-                            <img
-                              src="assets/img/gallery/protfolio-img10.png"
-                              alt="img"
-                              className="img"
-                            />
+                            <img src="assets/img/gallery/protfolio-img10.png" alt="img" className="img" />
                           </figure>
                         </Link>
                       </div>
@@ -444,21 +373,14 @@ export const Gallery = () => {
                             left: '0%',
                             top: '0px'
                           }}>
-                          <Link
-                            to="#"
-                            onClick={() => setImg(true)}
-                            className="popup-image">
+                          <Link to="#" onClick={() => setImg(true)} className="popup-image">
                             <figure
                               className="gallery-image"
                               onClick={() => {
                                 setActiveImage(1)
                                 setToggler(!toggler)
                               }}>
-                              <img
-                                src="assets/img/gallery/protfolio-img02.png"
-                                alt="img"
-                                className="img"
-                              />
+                              <img src="assets/img/gallery/protfolio-img02.png" alt="img" className="img" />
                             </figure>
                           </Link>
                         </div>
@@ -470,21 +392,14 @@ export const Gallery = () => {
                             left: '24.961%',
                             top: '0px'
                           }}>
-                          <Link
-                            to="#"
-                            onClick={() => setImg1(true)}
-                            className="popup-image">
+                          <Link to="#" onClick={() => setImg1(true)} className="popup-image">
                             <figure
                               className="gallery-image"
                               onClick={() => {
                                 setActiveImage(2)
                                 setToggler(!toggler)
                               }}>
-                              <img
-                                src={portfolioImage3}
-                                alt="img"
-                                className="img"
-                              />
+                              <img src={portfolioImage3} alt="img" className="img" />
                             </figure>
                           </Link>
                         </div>
@@ -495,21 +410,14 @@ export const Gallery = () => {
                             left: '49.922%',
                             top: '0px'
                           }}>
-                          <Link
-                            to="#"
-                            onClick={() => setImg2(true)}
-                            className="popup-image">
+                          <Link to="#" onClick={() => setImg2(true)} className="popup-image">
                             <figure
                               className="gallery-image"
                               onClick={() => {
                                 setActiveImage(3)
                                 setToggler(!toggler)
                               }}>
-                              <img
-                                src={portfolioImage1}
-                                alt="img"
-                                className="img"
-                              />
+                              <img src={portfolioImage1} alt="img" className="img" />
                             </figure>
                           </Link>
                         </div>
@@ -520,21 +428,14 @@ export const Gallery = () => {
                             left: '0%',
                             top: '300px'
                           }}>
-                          <Link
-                            to="#"
-                            onClick={() => setImg3(true)}
-                            className="popup-image">
+                          <Link to="#" onClick={() => setImg3(true)} className="popup-image">
                             <figure
                               className="gallery-image"
                               onClick={() => {
                                 setActiveImage(4)
                                 setToggler(!toggler)
                               }}>
-                              <img
-                                src={portfolioImage4}
-                                alt="img"
-                                className="img"
-                              />
+                              <img src={portfolioImage4} alt="img" className="img" />
                             </figure>
                           </Link>
                         </div>
@@ -545,21 +446,14 @@ export const Gallery = () => {
                             left: '24.961%',
                             top: '300px'
                           }}>
-                          <Link
-                            to="#"
-                            onClick={() => setImg4(true)}
-                            className="popup-image">
+                          <Link to="#" onClick={() => setImg4(true)} className="popup-image">
                             <figure
                               className="gallery-image"
                               onClick={() => {
                                 setActiveImage(5)
                                 setToggler(!toggler)
                               }}>
-                              <img
-                                src={portfolioImage5}
-                                alt="img"
-                                className="img"
-                              />
+                              <img src={portfolioImage5} alt="img" className="img" />
                             </figure>
                           </Link>
                         </div>
@@ -570,21 +464,14 @@ export const Gallery = () => {
                             left: '0%',
                             top: '600px'
                           }}>
-                          <Link
-                            to="#"
-                            onClick={() => setImg5(true)}
-                            className="popup-image">
+                          <Link to="#" onClick={() => setImg5(true)} className="popup-image">
                             <figure
                               className="gallery-image"
                               onClick={() => {
                                 setActiveImage(6)
                                 setToggler(!toggler)
                               }}>
-                              <img
-                                src={portfolioImage6}
-                                alt="img"
-                                className="img"
-                              />
+                              <img src={portfolioImage6} alt="img" className="img" />
                             </figure>
                           </Link>
                         </div>
@@ -595,21 +482,14 @@ export const Gallery = () => {
                             left: '49.922%',
                             top: '600px'
                           }}>
-                          <Link
-                            to="#"
-                            onClick={() => setImg6(true)}
-                            className="popup-image">
+                          <Link to="#" onClick={() => setImg6(true)} className="popup-image">
                             <figure
                               className="gallery-image"
                               onClick={() => {
                                 setActiveImage(7)
                                 setToggler(!toggler)
                               }}>
-                              <img
-                                src={portfolioImage7}
-                                alt="img"
-                                className="img"
-                              />
+                              <img src={portfolioImage7} alt="img" className="img" />
                             </figure>
                           </Link>
                         </div>
@@ -620,21 +500,14 @@ export const Gallery = () => {
                             left: '74.883%',
                             top: '600px'
                           }}>
-                          <Link
-                            to="#"
-                            onClick={() => setImg7(true)}
-                            className="popup-image">
+                          <Link to="#" onClick={() => setImg7(true)} className="popup-image">
                             <figure
                               className="gallery-image"
                               onClick={() => {
                                 setActiveImage(8)
                                 setToggler(!toggler)
                               }}>
-                              <img
-                                src={portfolioImage8}
-                                alt="img"
-                                className="img"
-                              />
+                              <img src={portfolioImage8} alt="img" className="img" />
                             </figure>
                           </Link>
                         </div>
@@ -645,21 +518,14 @@ export const Gallery = () => {
                             left: '49.922%',
                             top: '900px'
                           }}>
-                          <Link
-                            to="#"
-                            onClick={() => setImg8(true)}
-                            className="popup-image">
+                          <Link to="#" onClick={() => setImg8(true)} className="popup-image">
                             <figure
                               className="gallery-image"
                               onClick={() => {
                                 setActiveImage(9)
                                 setToggler(!toggler)
                               }}>
-                              <img
-                                src="assets/img/gallery/protfolio-img09.png"
-                                alt="img"
-                                className="img"
-                              />
+                              <img src="assets/img/gallery/protfolio-img09.png" alt="img" className="img" />
                             </figure>
                           </Link>
                         </div>
@@ -670,21 +536,14 @@ export const Gallery = () => {
                             left: '74.883%',
                             top: '900px'
                           }}>
-                          <Link
-                            to="#"
-                            onClick={() => setImg9(true)}
-                            className="popup-image">
+                          <Link to="#" onClick={() => setImg9(true)} className="popup-image">
                             <figure
                               className="gallery-image"
                               onClick={() => {
                                 setActiveImage(10)
                                 setToggler(!toggler)
                               }}>
-                              <img
-                                src="assets/img/gallery/protfolio-img10.png"
-                                alt="img"
-                                className="img"
-                              />
+                              <img src="assets/img/gallery/protfolio-img10.png" alt="img" className="img" />
                             </figure>
                           </Link>
                         </div>

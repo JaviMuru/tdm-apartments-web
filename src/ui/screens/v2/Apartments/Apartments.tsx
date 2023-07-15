@@ -1,3 +1,4 @@
+import { Trans } from '@lingui/macro'
 import FsLightbox from 'fslightbox-react'
 import React, { useState } from 'react'
 import { Footer } from '../../../components/Footer'
@@ -23,7 +24,7 @@ export const Apartments = () => {
   return (
     <>
       <main>
-        <Header title="Apartamentos" />
+        <Header title={<Trans>Apartamentos</Trans>} />
         <section id="services" className="services-area pb-90">
           <div className="container">
             <div className="row">

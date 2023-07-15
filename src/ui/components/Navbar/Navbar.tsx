@@ -52,36 +52,12 @@ export const Navbar = ({ locale, handleLocaleChange }: NavbarProps) => {
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
           </div>
           <ul className={click ? 'nav-menu-tdm active' : 'nav-menu-tdm'}>
-            <NavbarItem
-              title={<Trans>Inicio</Trans>}
-              url="/"
-              onClick={closeMobileMenu}
-            />
-            <NavbarItem
-              title={<Trans>Tossa de Mar</Trans>}
-              url="/about"
-              onClick={closeMobileMenu}
-            />
-            <NavbarItem
-              title={<Trans>Apartamentos</Trans>}
-              url="/apartments"
-              onClick={closeMobileMenu}
-            />
-            <NavbarItem
-              title={<Trans>Galeria</Trans>}
-              url="/gallery"
-              onClick={closeMobileMenu}
-            />
-            <NavbarItem
-              title={<Trans>Servicios</Trans>}
-              url="/services"
-              onClick={closeMobileMenu}
-            />
-            <NavbarItem
-              title={<Trans>Contacto</Trans>}
-              url="/contact"
-              onClick={closeMobileMenu}
-            />
+            <NavbarItem title={<Trans>Inicio</Trans>} url="/" onClick={closeMobileMenu} />
+            <NavbarItem title={<Trans>Tossa de Mar</Trans>} url="/about" onClick={closeMobileMenu} />
+            <NavbarItem title={<Trans>Apartamentos</Trans>} url="/apartments" onClick={closeMobileMenu} />
+            <NavbarItem title={<Trans>Galeria</Trans>} url="/gallery" onClick={closeMobileMenu} />
+            <NavbarItem title={<Trans>Servicios</Trans>} url="/services" onClick={closeMobileMenu} />
+            <NavbarItem title={<Trans>Contacto</Trans>} url="/contact" onClick={closeMobileMenu} />
             <div className="dropdown">
               <button className="dropbtn">
                 {/* @ts-ignore */}
@@ -98,7 +74,7 @@ export const Navbar = ({ locale, handleLocaleChange }: NavbarProps) => {
             </div>
           </ul>
           {button && (
-            <NavbarButton>
+            <NavbarButton url="/book">
               <Trans>Reserva</Trans>
             </NavbarButton>
           )}

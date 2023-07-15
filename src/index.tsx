@@ -9,10 +9,7 @@ import { messages as enMessages } from './locales/en-EN/messages'
 import { messages as esMessages } from './locales/es-ES/messages'
 import reportWebVitals from './reportWebVitals'
 import './ui/assets/styles/plugins.css'
-import {
-  defaultLocale,
-  loadMessages
-} from './ui/components/Locales/LocaleLoader'
+import { defaultLocale, loadMessages } from './ui/components/Locales/LocaleLoader'
 
 i18n.load({
   en: enMessages,
@@ -21,7 +18,6 @@ i18n.load({
 
 const I18nApp = () => {
   function changeLocale(locale: string) {
-    console.log('@@locale', locale)
     setCurrentLocale(locale)
     loadMessages(locale)
   }

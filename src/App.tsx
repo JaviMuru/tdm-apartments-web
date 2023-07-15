@@ -17,6 +17,7 @@ import { Activies } from './ui/screens/v2/Activities/Activies'
 import { ApartmentDetails } from './ui/screens/v2/ApartmentDetails/ApartmentDetails'
 import { Apartments } from './ui/screens/v2/Apartments'
 import { BeachDetails } from './ui/screens/v2/BeachDetails/BeachDetails'
+import { Book } from './ui/screens/v2/Book'
 import { Contact } from './ui/screens/v2/Contact'
 import { Faq } from './ui/screens/v2/Faq/Faq'
 import { Gallery } from './ui/screens/v2/Gallery/Gallery'
@@ -47,6 +48,7 @@ export function App({ locale, handleLocaleChange }: AppProps) {
         <Route path="/faq" element={<Faq />} />
         <Route path="/activies" element={<Activies />} />
         <Route path="/gallery" element={<Gallery />} />
+        <Route path="/book" element={<Book />} />
       </Routes>
     </Router>
   )

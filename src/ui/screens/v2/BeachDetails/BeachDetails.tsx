@@ -1,3 +1,4 @@
+import { Trans } from '@lingui/macro'
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import portfolio1 from '../../../assets/img/gallery/protfolio-img01.png'
@@ -14,7 +15,7 @@ export const BeachDetails = () => {
   return (
     <>
       <main>
-        <Header title="Playas y calas" />
+        <Header title={<Trans>Playas y calas</Trans>} />
         <div className="about-area5 about-p p-relative">
           <div className="container pt-120 pb-90">
             <div className="row">
@@ -22,12 +23,12 @@ export const BeachDetails = () => {
                 <aside className="sidebar services-sidebar">
                   <div className="sidebar-widget categories">
                     <div className="widget-content">
-                      <h2 className="widget-title"> Playas y calas</h2>
+                      <h2 className="widget-title">
+                        <Trans>Playas y calas</Trans>
+                      </h2>
                       <ul className="services-categories">
                         {beachDetailsData.map((beach, index) => (
-                          <li
-                            key={index}
-                            className={beachNumber === index ? 'active' : ''}>
+                          <li key={index} className={beachNumber === index ? 'active' : ''}>
                             <Link
                               onClick={() => {
                                 setBeachNumber(index)

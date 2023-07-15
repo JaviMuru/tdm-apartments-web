@@ -1,3 +1,4 @@
+import { Trans } from '@lingui/macro'
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Slider from 'react-slick'
@@ -58,9 +59,13 @@ export const Services = () => {
                   </div>
                   <div className="services-08-content">
                     <h3>
-                      <Link to="/service-details">Playas y calas</Link>
+                      <Link to="/service-details">
+                        <Trans>Playas y calas</Trans>
+                      </Link>
                     </h3>
-                    <p>Playas y calas cercanas a Tossa de mar</p>
+                    <p>
+                      <Trans>Playas y calas cercanas a Tossa de mar</Trans>
+                    </p>
                     <Link to="/beach-details">
                       Read More <i className="fal fa-long-arrow-right"></i>
                     </Link>

@@ -1,3 +1,4 @@
+import { Trans } from '@lingui/macro'
 import React from 'react'
 import { Link } from 'react-router-dom'
 import anImg2 from '../../../assets/img/bg/an-img-02.png'
@@ -14,7 +15,7 @@ export const About = () => {
   return (
     <>
       <main>
-        <Header title="Sobre nosotros" />
+        <Header title={<Trans>Sobre nosotros</Trans>} />
         <section className="about-area about-p pt-120 pb-120 p-relative fix">
           <div className="animations-02">
             <img src={anImg2} alt="contact-bg-an-02" />
@@ -38,7 +39,9 @@ export const About = () => {
                   data-animation="fadeInRight"
                   data-delay=".4s">
                   <div className="about-title second-title pb-25">
-                    <h5>Sobre nosotros</h5>
+                    <h5>
+                      <Trans>Sobre nosotros</Trans>
+                    </h5>
                     <h2>8 apartamentos en Tossa de Mar</h2>
                   </div>
                   <p>Párrafo 1</p>
@@ -59,10 +62,7 @@ export const About = () => {
             </div>
           </div>
         </section>
-        <section
-          id="skill"
-          className="skill-area p-relative fix"
-          style={{ background: '#291d16' }}>
+        <section id="skill" className="skill-area p-relative fix" style={{ background: '#291d16' }}>
           <div className="animations-01">
             <img src={anImg5} alt="contact-bg-an-05" />
           </div>
@@ -75,37 +75,27 @@ export const About = () => {
                     <h2>We Offer Wide Selection of Hotel</h2>
                   </div>
                   <p>
-                    Vestibulum non ornare nunc. Maecenas a metus in est iaculis
-                    pretium. Aliquam ullamcorper nibh lacus, ac suscipit ipsum
-                    consequat porttitor.
+                    Vestibulum non ornare nunc. Maecenas a metus in est iaculis pretium. Aliquam ullamcorper nibh lacus,
+                    ac suscipit ipsum consequat porttitor.
                   </p>
                   <div className="skills-content s-about-content mt-20">
                     <div className="skills">
                       <div className="skill mb-30">
                         <div className="skill-name">Qulity Production</div>
                         <div className="skill-bar">
-                          <div
-                            className="skill-per"
-                            id="80"
-                            style={{ width: '80%' }}></div>
+                          <div className="skill-per" id="80" style={{ width: '80%' }}></div>
                         </div>
                       </div>
                       <div className="skill mb-30">
                         <div className="skill-name">Maintenance Services</div>
                         <div className="skill-bar">
-                          <div
-                            className="skill-per"
-                            id="90"
-                            style={{ width: '90%' }}></div>
+                          <div className="skill-per" id="90" style={{ width: '90%' }}></div>
                         </div>
                       </div>
                       <div className="skill mb-30">
                         <div className="skill-name">Product Managment</div>
                         <div className="skill-bar">
-                          <div
-                            className="skill-per"
-                            id="70"
-                            style={{ width: '70%' }}></div>
+                          <div className="skill-per" id="70" style={{ width: '70%' }}></div>
                         </div>
                       </div>
                     </div>
@@ -113,19 +103,14 @@ export const About = () => {
                 </div>
               </div>
               <div className="col-lg-6 col-md-12 col-sm-12 pr-30">
-                <div
-                  className="skills-img wow fadeInRight  animated"
-                  data-animation="fadeInRight"
-                  data-delay=".4s">
+                <div className="skills-img wow fadeInRight  animated" data-animation="fadeInRight" data-delay=".4s">
                   <img src={skillsBackground} alt="img" className="img" />
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <section
-          className="feature-area2 p-relative fix"
-          style={{ background: '#f7f5f1' }}>
+        <section className="feature-area2 p-relative fix" style={{ background: '#f7f5f1' }}>
           <div className="animations-02">
             <img src={anImg2} alt="contact-bg-an-05" />
           </div>
@@ -143,18 +128,14 @@ export const About = () => {
                     <h2>Pearl Of The Adriatic.</h2>
                   </div>
                   <p>
-                    Vestibulum non ornare nunc. Maecenas a metus in est iaculis
-                    pretium. Aliquam ullamcorper nibh lacus, ac suscipit ipsum
-                    consequat porttitor.Aenean vehicula ligula eu rhoncus
-                    porttitor. Duis vel lacinia quam. Nunc rutrum porta ex, in
-                    imperdiet tortor feugiat at.
+                    Vestibulum non ornare nunc. Maecenas a metus in est iaculis pretium. Aliquam ullamcorper nibh lacus,
+                    ac suscipit ipsum consequat porttitor.Aenean vehicula ligula eu rhoncus porttitor. Duis vel lacinia
+                    quam. Nunc rutrum porta ex, in imperdiet tortor feugiat at.
                   </p>
                   <p>
-                    Cras finibus laoreet felis et hendrerit. Integer ligula
-                    lorem, finibus vitae lorem at, egestas consectetur urna.
-                    Integer id ultricies elit. Maecenas sodales nibh, quis
-                    posuere felis. In commodo mi lectus venenatis metus eget
-                    fringilla. Suspendisse varius ante eget.
+                    Cras finibus laoreet felis et hendrerit. Integer ligula lorem, finibus vitae lorem at, egestas
+                    consectetur urna. Integer id ultricies elit. Maecenas sodales nibh, quis posuere felis. In commodo
+                    mi lectus venenatis metus eget fringilla. Suspendisse varius ante eget.
                   </p>
                   <div className="slider-btn mt-15">
                     <Link to="/about" className="btn ss-btn smoth-scroll">
@@ -166,9 +147,7 @@ export const About = () => {
             </div>
           </div>
         </section>
-        <section
-          className="newslater-area p-relative pt-120 pb-120"
-          style={{ background: '#f7f5f1' }}>
+        <section className="newslater-area p-relative pt-120 pb-120" style={{ background: '#f7f5f1' }}>
           <div className="animations-01">
             <img src={anImg7} alt="contact-bg-an-05" />
           </div>
@@ -182,16 +161,11 @@ export const About = () => {
                   <h5>Newsletter</h5>
                   <h2>Obten las mejores ofertas</h2>
                   <p>
-                    Subscribiéndote a nuestro newsletter obtendras las mejores
-                    ofertas para reservar nuestros apartamentos
+                    Subscribiéndote a nuestro newsletter obtendras las mejores ofertas para reservar nuestros
+                    apartamentos
                   </p>
                 </div>
-                <form
-                  name="ajax-form"
-                  id="contact-form4"
-                  action="#"
-                  method="post"
-                  className="contact-form newslater">
+                <form name="ajax-form" id="contact-form4" action="#" method="post" className="contact-form newslater">
                   <div className="form-group">
                     <input
                       className="form-control"
