@@ -2,16 +2,16 @@ import React from 'react'
 import './FormInput.css'
 
 interface BookFormItemProps {
-  key: string
+  field: string
   placeholder: string
   required?: boolean
 }
 
-export const FormInput = ({ key, placeholder, required = false }: BookFormItemProps) => {
+export const FormInput = ({ field, placeholder, required = false }: BookFormItemProps) => {
   return (
     <div className="bookFormTextItemContainer">
       <div className="bookFormTextItemField c-subject">
-        <input type="text" id={key} name={key} placeholder={placeholder} required />
+        <input type="text" id={field} name={field} placeholder={placeholder} required={required} />
       </div>
     </div>
   )

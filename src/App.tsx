@@ -12,24 +12,24 @@ import './ui/assets/css/slick.css'
 import './ui/assets/css/style.css'
 import './ui/assets/fontawesome/css/all.min.css'
 import { Navbar } from './ui/components/Navbar'
-import { About } from './ui/screens/v2/About'
-import { Activies } from './ui/screens/v2/Activities/Activies'
-import { ApartmentDetails } from './ui/screens/v2/ApartmentDetails/ApartmentDetails'
-import { Apartments } from './ui/screens/v2/Apartments'
-import { BeachDetails } from './ui/screens/v2/BeachDetails/BeachDetails'
-import { Book } from './ui/screens/v2/Book'
-import { Contact } from './ui/screens/v2/Contact'
-import { Faq } from './ui/screens/v2/Faq/Faq'
-import { Gallery } from './ui/screens/v2/Gallery/Gallery'
-import { Home } from './ui/screens/v2/Home'
-import { NotFound } from './ui/screens/v2/NotFound'
-import { ServiceDetails } from './ui/screens/v2/ServiceDetails/ServiceDetails'
-import { Services } from './ui/screens/v2/Services'
-import { WhatToSee } from './ui/screens/v2/WhatToSee/WhatToSee'
+import { About } from './ui/screens/About'
+import { Activies } from './ui/screens/Activities/Activies'
+import { ApartmentDetails } from './ui/screens/ApartmentDetails/ApartmentDetails'
+import { Apartments } from './ui/screens/Apartments'
+import { BeachDetails } from './ui/screens/BeachDetails/BeachDetails'
+import { Book } from './ui/screens/Book'
+import { Contact } from './ui/screens/Contact'
+import { Faq } from './ui/screens/Faq/Faq'
+import { Gallery } from './ui/screens/Gallery/Gallery'
+import { Home } from './ui/screens/Home'
+import { NotFound } from './ui/screens/NotFound'
+import { ServiceDetails } from './ui/screens/ServiceDetails/ServiceDetails'
+import { Services } from './ui/screens/Services'
+import { WhatToSee } from './ui/screens/WhatToSee/WhatToSee'
 
 interface AppProps {
-  locale: any
-  handleLocaleChange: any
+  locale: string
+  handleLocaleChange: (locale: string) => void
 }
 
 export function App({ locale, handleLocaleChange }: AppProps) {
