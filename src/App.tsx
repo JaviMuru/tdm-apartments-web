@@ -22,6 +22,7 @@ import { Contact } from './ui/screens/v2/Contact'
 import { Faq } from './ui/screens/v2/Faq/Faq'
 import { Gallery } from './ui/screens/v2/Gallery/Gallery'
 import { Home } from './ui/screens/v2/Home'
+import { NotFound } from './ui/screens/v2/NotFound'
 import { ServiceDetails } from './ui/screens/v2/ServiceDetails/ServiceDetails'
 import { Services } from './ui/screens/v2/Services'
 import { WhatToSee } from './ui/screens/v2/WhatToSee/WhatToSee'
@@ -49,6 +50,7 @@ export function App({ locale, handleLocaleChange }: AppProps) {
         <Route path="/activies" element={<Activies />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/book" element={<Book />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
   )
