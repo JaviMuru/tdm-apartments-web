@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import BGImg from '../../assets/img/bg/footer-bg.png'
 import footerLogo from '../../assets/img/logo/logo1.png'
 import { Copyright } from './_components/Copyright'
+import { FooterLink } from './_components/FooterLink'
 
 export const Footer = () => {
   return (
@@ -56,31 +57,11 @@ export const Footer = () => {
                   </div>
                   <div className="footer-link">
                     <ul>
-                      <li>
-                        <Link to="/">
-                          <Trans>Inicio</Trans>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/about">
-                          <Trans>Sobre nosotros</Trans>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/apartments">
-                          <Trans>Apartamentos</Trans>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/services">
-                          <Trans>Servicios </Trans>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/contact">
-                          <Trans>Contacto</Trans>
-                        </Link>
-                      </li>
+                      <FooterLink title={<Trans>Inicio</Trans>} url="/" />
+                      <FooterLink title={<Trans>Sobre nosotros</Trans>} url="/about" />
+                      <FooterLink title={<Trans>Apartamentos</Trans>} url="/apartments" />
+                      <FooterLink title={<Trans>Servicios</Trans>} url="/services" />
+                      <FooterLink title={<Trans>Contacto</Trans>} url="/contact" />
                     </ul>
                   </div>
                 </div>
@@ -92,18 +73,10 @@ export const Footer = () => {
                   </div>
                   <div className="footer-link">
                     <ul>
-                      <li>
-                        <Link to="/faq">FAQ</Link>
-                      </li>
-                      <li>
-                        <Link to="#">Soporte</Link>
-                      </li>
-                      <li>
-                        <Link to="#">Privacidad</Link>
-                      </li>
-                      <li>
-                        <Link to="#">Terminos y condiciones</Link>
-                      </li>
+                      <FooterLink title={<Trans>FAQ</Trans>} url="/faq" />
+                      <FooterLink title={<Trans>Soporte</Trans>} url="#" />
+                      <FooterLink title={<Trans>Privacidad</Trans>} url="#" />
+                      <FooterLink title={<Trans>Terminos y condiciones</Trans>} url="#" />
                     </ul>
                   </div>
                 </div>

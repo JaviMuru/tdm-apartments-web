@@ -64,7 +64,7 @@ export const ServiceDetails = () => {
                   <div className="service-detail-contact wow fadeup-animation" data-wow-delay="1.1s">
                     <h3 className="h3-title">If You Need Any Help Contact With Us</h3>
                     <Link to="#" title="Call now">
-                      +91 705 2101 786
+                      +11 111 111 111
                     </Link>
                   </div>
                 </aside>

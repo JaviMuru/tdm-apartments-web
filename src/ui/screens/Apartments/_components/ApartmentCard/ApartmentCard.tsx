@@ -1,5 +1,6 @@
 import { Trans } from '@lingui/macro'
-import React from 'react'
+import React, { useState } from 'react'
+import Lightbox from 'react-18-image-lightbox'
 import { Link } from 'react-router-dom'
 import icon1 from '../../../../assets/img/icon/sve-icon1.png'
 import icon2 from '../../../../assets/img/icon/sve-icon2.png'
@@ -13,13 +14,33 @@ interface ApartmentCardProps {
 }
 
 export const ApartmentCard = ({ apartment }: ApartmentCardProps) => {
+  const [isLightboxOpen, setLightboxOpen] = useState(false)
+
   return (
     <div className="col-xl-4 col-md-6">
       <div className="single-services ser-m mb-30">
         <div className="services-thumb" onClick={() => {}}>
-          <Link to="#" onClick={() => {}} className="gallery-link popup-image">
+          <Link to="#" onClick={() => setLightboxOpen(true)} className="gallery-link popup-image">
             <img src={apartment.image} alt="img" />
           </Link>
+          {isLightboxOpen && (
+            <Lightbox
+              mainSrc={apartment.image}
+              // nextSrc={images[(photoIndex + 1) % images.length]}
+              // prevSrc={images[(photoIndex + images.length - 1) % images.length]}
+              onCloseRequest={() => setLightboxOpen(false)}
+              /*onMovePrevRequest={() =>
+                this.setState({
+                  photoIndex: (photoIndex + images.length - 1) % images.length
+                })
+              }
+              onMoveNextRequest={() =>
+                this.setState({
+                  photoIndex: (photoIndex + 1) % images.length
+                })
+              }*/
+            />
+          )}
         </div>
         <div className="services-content">
           <div

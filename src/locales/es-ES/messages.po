@@ -18,69 +18,141 @@ msgstr ""
 #~ msgid "Nombre"
 #~ msgstr "Nombre"
 
-#: src/ui/components/Footer/Footer.tsx:71
-#: src/ui/components/Navbar/Navbar.tsx:66
+#: src/ui/screens/Home/Home.tsx:322
+msgid "Adultos"
+msgstr "Adultos"
+
+#: src/ui/screens/Book/Book.tsx:22
+#: src/ui/screens/Home/Home.tsx:335
+#: src/ui/screens/Home/Home.tsx:339
+msgid "Apartamento"
+msgstr "Apartamento"
+
+#: src/ui/components/Footer/Footer.tsx:62
+#: src/ui/components/Navbar/Navbar.tsx:57
+#: src/ui/screens/Apartments/Apartments.tsx:26
+#: src/ui/screens/Home/Home.tsx:168
 msgid "Apartamentos"
 msgstr "Apartamentos"
 
-#: src/ui/screens/v2/Contact/_components/ContactForm/ContactForm.tsx:59
+#: src/ui/screens/Book/Book.tsx:21
+#: src/ui/screens/Contact/Contact.tsx:55
 msgid "Asunto"
 msgstr "Asunto"
 
-#: src/ui/screens/v2/Contact/_components/ContactForm/ContactForm.tsx:15
+#: src/ui/screens/Contact/Contact.tsx:51
 msgid "Contáctanos"
 msgstr "Contáctanos"
 
-#: src/ui/components/Footer/Footer.tsx:81
-#: src/ui/components/Navbar/Navbar.tsx:81
-#: src/ui/screens/v2/Contact/Contact.tsx:11
+#: src/ui/components/Footer/Footer.tsx:64
+#: src/ui/components/Navbar/Navbar.tsx:60
+#: src/ui/screens/Contact/Contact.tsx:14
 msgid "Contacto"
 msgstr "Contacto"
 
-#: src/ui/screens/v2/Contact/_components/ContactForm/ContactForm.tsx:37
-#: src/ui/screens/v2/Contact/Contact.tsx:38
+#: src/ui/screens/Book/Book.tsx:19
+#: src/ui/screens/Contact/Contact.tsx:39
+#: src/ui/screens/Contact/Contact.tsx:53
 msgid "Correo electrónico"
 msgstr "Correo electrónico"
 
-#: src/ui/screens/v2/Contact/_components/ContactForm/ContactForm.tsx:79
+#: src/ui/screens/Home/Home.tsx:171
+msgid "Descripción"
+msgstr "Descripción"
+
+#: src/ui/screens/Home/Home.tsx:165
+msgid "El placer de conocer Tossa de Mar"
+msgstr "El placer de conocer Tossa de Mar"
+
+#: src/ui/screens/Book/Book.tsx:26
+#: src/ui/screens/Contact/Contact.tsx:58
 msgid "Enviar"
 msgstr "Enviar"
 
-#: src/ui/screens/v2/Contact/_components/ContactForm/ContactForm.tsx:70
+#: src/ui/screens/Book/Book.tsx:25
+#: src/ui/screens/Contact/Contact.tsx:57
 msgid "Escribe tu mensaje"
 msgstr "Escribe tu mensaje"
 
-#: src/ui/components/Navbar/Navbar.tsx:71
+#: src/ui/components/Footer/Footer.tsx:76
+msgid "FAQ"
+msgstr "FAQ"
+
+#: src/ui/components/Navbar/Navbar.tsx:58
 msgid "Galeria"
 msgstr "Galeria"
 
-#: src/ui/components/Footer/Footer.tsx:61
+#: src/ui/screens/Gallery/Gallery.tsx:64
+msgid "Galería"
+msgstr "Galería"
+
+#: src/ui/components/Footer/Footer.tsx:60
 #: src/ui/components/Header/Header.tsx:36
-#: src/ui/components/Navbar/Navbar.tsx:56
+#: src/ui/components/Navbar/Navbar.tsx:55
 msgid "Inicio"
 msgstr "Inicio"
 
-#: src/ui/screens/v2/Contact/_components/ContactForm/ContactForm.tsx:26
+#: src/ui/screens/Book/Book.tsx:18
+#: src/ui/screens/Contact/Contact.tsx:52
 msgid "Nombre"
 msgstr "Nombre"
 
-#: src/ui/screens/v2/Contact/_components/ContactForm/ContactForm.tsx:48
+#: src/ui/screens/Book/Book.tsx:23
+msgid "Número de personas"
+msgstr "Número de personas"
+
+#: src/ui/screens/Book/Book.tsx:20
+#: src/ui/screens/Contact/Contact.tsx:54
 msgid "Número de teléfono"
 msgstr "Número de teléfono"
 
-#: src/ui/components/Navbar/Navbar.tsx:101
+#: src/ui/screens/BeachDetails/BeachDetails.tsx:18
+#: src/ui/screens/BeachDetails/BeachDetails.tsx:27
+#: src/ui/screens/Services/Services.tsx:63
+msgid "Playas y calas"
+msgstr "Playas y calas"
+
+#: src/ui/screens/Services/Services.tsx:67
+msgid "Playas y calas cercanas a Tossa de mar"
+msgstr "Playas y calas cercanas a Tossa de mar"
+
+#: src/ui/components/Footer/Footer.tsx:78
+msgid "Privacidad"
+msgstr "Privacidad"
+
+#: src/ui/components/Navbar/Navbar.tsx:78
+#: src/ui/screens/Home/Home.tsx:353
 msgid "Reserva"
 msgstr "Reserva"
 
-#: src/ui/components/Footer/Footer.tsx:76
-#: src/ui/components/Navbar/Navbar.tsx:76
+#: src/ui/screens/Book/Book.tsx:12
+#: src/ui/screens/Book/Book.tsx:17
+msgid "Reserva tu apartamento"
+msgstr "Reserva tu apartamento"
+
+#: src/ui/screens/Apartments/_components/ApartmentCard/ApartmentCard.tsx:44
+msgid "Reservar"
+msgstr "Reservar"
+
+#: src/ui/components/Footer/Footer.tsx:63
+#: src/ui/components/Navbar/Navbar.tsx:59
 msgid "Servicios"
 msgstr "Servicios"
 
-#: src/ui/components/Footer/Footer.tsx:66
+#: src/ui/components/Footer/Footer.tsx:61
+#: src/ui/screens/About/About.tsx:18
+#: src/ui/screens/About/About.tsx:43
 msgid "Sobre nosotros"
 msgstr "Sobre nosotros"
 
-#: src/ui/components/Navbar/Navbar.tsx:61
+#: src/ui/components/Footer/Footer.tsx:77
+msgid "Soporte"
+msgstr "Soporte"
+
+#: src/ui/components/Footer/Footer.tsx:79
+msgid "Terminos y condiciones"
+msgstr "Terminos y condiciones"
+
+#: src/ui/components/Navbar/Navbar.tsx:56
 msgid "Tossa de Mar"
 msgstr "Tossa de Mar"
